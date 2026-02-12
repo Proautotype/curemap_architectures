@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
+  <diagram name="Page-1" id="X8YQqmjMZ3ORyt2pT-Me">
+    <mxGraphModel dx="925" dy="429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-5" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Institution" vertex="1">
+          <mxGeometry height="260" width="160" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-6" parent="C1gO9VwdxeQu6cgVXE-w-5" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ id (UUID)&lt;div&gt;+ code(varchar(12))&lt;br&gt;&lt;div&gt;+ name (&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;varchar(200)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ email (&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;varchar(200)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ address (text)&lt;/div&gt;&lt;div&gt;+ deleted (bool)&lt;/div&gt;&lt;div&gt;+ active (bool)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;createInsitution(institution)&lt;/div&gt;&lt;div&gt;findById(UUID)&lt;/div&gt;&lt;div&gt;update(UUID, institution)&lt;/div&gt;&lt;div&gt;softDelete(UUID)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-9" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Product" vertex="1">
+          <mxGeometry height="300" width="190" x="290" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-10" parent="C1gO9VwdxeQu6cgVXE-w-9" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ id (UUID)&lt;br&gt;+ barcode(varchar(12))&lt;br&gt;+ name(varchar (255))&lt;div&gt;+ current_selling_price (Decimal(12,3))&lt;/div&gt;&lt;div&gt;+ institution (UUID)&lt;/div&gt;&lt;div&gt;+ createdBy(varchar(255))&lt;/div&gt;&lt;div&gt;+ createdAt(varchar(255))&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;createProduct(Product)&lt;/div&gt;&lt;div&gt;findById(UUID)&lt;/div&gt;&lt;div&gt;filter(Product)&lt;/div&gt;&lt;div&gt;updateProduct(UUID, Product)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="190" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-11" edge="1" parent="1" source="C1gO9VwdxeQu6cgVXE-w-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.993;exitY=0.058;exitDx=0;exitDy=0;entryX=-0.024;entryY=0.537;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="C1gO9VwdxeQu6cgVXE-w-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-12" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Employees" vertex="1">
+          <mxGeometry height="120" width="160" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-13" parent="C1gO9VwdxeQu6cgVXE-w-12" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ id (UUID)&lt;br&gt;+ name (varchar(255))&lt;br&gt;+ dob&lt;div&gt;+ role&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-14" edge="1" parent="1" source="C1gO9VwdxeQu6cgVXE-w-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.014;entryY=0.408;entryDx=0;entryDy=0;entryPerimeter=0;" target="C1gO9VwdxeQu6cgVXE-w-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-15" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Roles" vertex="1">
+          <mxGeometry height="120" width="160" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-16" parent="C1gO9VwdxeQu6cgVXE-w-15" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+ id (UUID)&lt;br&gt;+ name (varchar(255))&lt;br&gt;+ createdAt (date)" vertex="1">
+          <mxGeometry height="70" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="C1gO9VwdxeQu6cgVXE-w-18" edge="1" parent="1" source="C1gO9VwdxeQu6cgVXE-w-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.003;exitY=0.197;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitPerimeter=0;" target="C1gO9VwdxeQu6cgVXE-w-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
